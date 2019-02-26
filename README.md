@@ -25,7 +25,7 @@ It contains set of BSON marshal/unmarshal codecs for Google protocol buffers typ
 
 ## Links
 
-- Official MongoDB Go Driver: [https://github.com/mongodb/mongo-go-driver](https://github.com/mongodb/mongo-go-driver)
+- Official MongoDB Go Driver: [https://go.mongodb.org/mongo-driver](https://go.mongodb.org/mongo-driver)
 - Google protocol buffers types (wrappers): [https://github.com/golang/protobuf/blob/master/ptypes/wrappers/wrappers.proto](https://github.com/golang/protobuf/blob/master/ptypes/wrappers/wrappers.proto)
 - Google protocol buffers Timestamp type: [https://github.com/golang/protobuf/blob/master/ptypes/timestamp/timestamp.proto](https://github.com/golang/protobuf/blob/master/ptypes/timestamp/timestamp.proto)
   
@@ -39,7 +39,7 @@ It contains set of BSON marshal/unmarshal codecs for Google protocol buffers typ
 Installing using `go get`:
 
 ```bash
-go get -u github.com/amsokol/mongo-go-driver-protobuf
+go get -u github.com/nieruchomosci/mongo-go-driver-protobuf
 ```
 
 or you don't need to do anything manually if you are using Go modules. Go modules installs necessary packages automatically.
@@ -64,14 +64,14 @@ import (
     "github.com/golang/protobuf/ptypes"
     "github.com/golang/protobuf/ptypes/wrappers"
 
-    "github.com/mongodb/mongo-go-driver/bson"
-    "github.com/mongodb/mongo-go-driver/bson/bsoncodec"
-    "github.com/mongodb/mongo-go-driver/bson/primitive"
-    "github.com/mongodb/mongo-go-driver/mongo"
-    "github.com/mongodb/mongo-go-driver/mongo/options"
-    "github.com/mongodb/mongo-go-driver/x/mongo/driver/topology"
+    "go.mongodb.org/mongo-driver/bson"
+    "go.mongodb.org/mongo-driver/bson/bsoncodec"
+    "go.mongodb.org/mongo-driver/bson/primitive"
+    "go.mongodb.org/mongo-driver/mongo"
+    "go.mongodb.org/mongo-driver/mongo/options"
+    "go.mongodb.org/mongo-driver/x/mongo/driver/topology"
 
-    "github.com/amsokol/mongo-go-driver-protobuf"
+    "github.com/nieruchomosci/mongo-go-driver-protobuf"
 )
 
 type Data struct {
